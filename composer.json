@@ -3,7 +3,7 @@
     "description": "List, filter and summarise job ads from the command line",
     "type": "project",
     "require": {
-        "php": "8.5"
+        "php": "^8.5"
     },
     "license": "MIT",
     "autoload": {
@@ -11,10 +11,31 @@
             "JobAds\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
     "authors": [
         {
             "name": "Fatih Irfan",
             "email": "fathirfnz@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "pestphp/pest": "^5.3"
+    },
+    "scripts": {
+        "test": "pest",
+        "lint": [
+            "pint --test",
+            "phpstan analyse --no-progress"
+        ],
+        "fix": "pint"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
 }
