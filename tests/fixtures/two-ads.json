@@ -1,0 +1,4 @@
+[
+    {"id": 1, "company": "Contoh Tech Sdn Bhd", "title": "Junior Laravel Developer", "seniority": "junior", "location": "Kuala Lumpur", "salary_min": 3500, "salary_max": 4500, "skills": ["laravel", "php"]},
+    {"id": 2, "company": "Rekaan Labs", "title": "Senior Laravel Engineer", "seniority": "senior", "location": "Remote", "salary_min": 9000, "salary_max": 12000, "skills": ["laravel", "aws"]}
+]
