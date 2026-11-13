@@ -29,11 +29,14 @@
     },
     "scripts": {
         "test": "pest",
-        "lint": [
-            "pint --test",
-            "phpstan analyse --no-progress"
-        ],
-        "fix": "pint"
+        "lint": "pint --test",
+        "format": "pint",
+        "analyse": "phpstan analyse --no-progress",
+        "check": [
+            "@lint",
+            "@analyse",
+            "@test"
+        ]
     },
     "config": {
         "allow-plugins": {
